@@ -10,3 +10,8 @@ region = filtered_img.crop(box)
 region.save('grey.png', 'png')
 #filtered_img.show()
 print(img)
+
+img2 = Image.open('./astro.jpg')
+new_img = img2.resize((400, 400))
+new_img.save('thumbnail.jpg')
+print(img2.size)
